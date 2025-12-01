@@ -29,6 +29,7 @@ public class User {
     protected void ensureId() {
         if (this.id == null) {
             this.id = UUID.randomUUID().toString();
+            System.out.println("Generated new UUID: " + this.id);
         }
     }
 
