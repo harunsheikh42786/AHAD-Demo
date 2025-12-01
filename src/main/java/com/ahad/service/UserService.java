@@ -4,17 +4,16 @@ import com.ahad.model.User;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.UUID;
 
 public interface UserService {
 
     User addUser(User user);
 
-    Optional<User> getUserById(UUID id);
+    Optional<User> getUserById(String id);
 
     List<User> getAllUsers();
 
-    User updateUser(UUID id, User user);
+    User updateUser(String id, User user);
 
-    void removeUser(UUID id);
+    void removeUser(String id);
 }
